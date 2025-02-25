@@ -61,32 +61,6 @@
 			<img src="images/screenshot_2-18_11-59-53.png" alt="Basic 4 with jaggies" style="width:50%"/>
 			<figcaption>Oh no Jaggies!</figcaption>
 		</figure>
-
-		<p>Here is an example 2x2 gridlike structure using an HTML table. Each <b>tr</b> is a row and each <b>td</b> is a column in that row. You might find this useful for framing and showing your result images in an organized fashion.</p>
-		<div style="display: flex; flex-direction: column; align-items: center;">
-			<table style="width: 100%; text-align: center; border-collapse: collapse;">
-			  <tr>
-				<td style="text-align: center;">
-				  <img src="images/image1.png" width="400px"/>
-				  <figcaption>Caption goes here.</figcaption>
-				</td>
-				<td style="text-align: center;">
-				  <img src="images/image2.png" width="400px"/>
-				  <figcaption>Caption goes here.</figcaption>
-				</td>
-			  </tr>
-			  <tr>
-				<td style="text-align: center;">
-				  <img src="images/image3.png" width="400px"/>
-				  <figcaption>Caption goes here.</figcaption>
-				</td>
-				<td style="text-align: center;">
-				  <img src="images/image4.png" width="400px"/>
-				  <figcaption>Caption goes here.</figcaption>
-				</td>
-			  </tr>
-			</table>
-		</div>
 		
 		<h2>Task 2: Antialiasing by Supersampling</h2>
 		<p>
@@ -97,47 +71,106 @@
 		</p>
 
 		<figure>
-			<img src="images/Screen Shot 2025-02-23 at 10.39.20 AM.png" alt="Sample Rate 1" style="width:50%"/>
+			<img src="images/screenshot_2-18_11-59-53.png" alt="Sample Rate 1" style="width:50%"/>
 			<figcaption>Sample Rate 1</figcaption>
 		</figure>
 
 		<figure>
-			<img src="images/Screen Shot 2025-02-23 at 10.40.06 AM.png" alt="Sample Rate 4" style="width:50%"/>
+			<img src="images/screenshot_2-23_15-4-47.png" alt="Sample Rate 4" style="width:50%"/>
 			<figcaption>Sample Rate 4</figcaption>
 		</figure>
 
 		<figure>
-			<img src="images/Screen Shot 2025-02-23 at 10.41.02 AM.png" alt="Sample Rate 16" style="width:50%"/>
+			<img src="images/screenshot_2-23_15-4-50.png" alt="Sample Rate 16" style="width:50%"/>
 			<figcaption>Sample Rate 16</figcaption>
 		</figure>
 
 		
 
 		<h2>Task 3: Transforms</h2>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		I made robot man lift his right leg using a translation and a rotation matrix.
+
+		<figure>
+			<img src="/images/screenshot_2-23_17-7-1.png" alt
+			="Robot
+			" style="width:50%"/>
+			<figcaption
+			>Robot</figcaption>
+		</figure>
 
 		<h2>Task 4: Barycentric coordinates</h2>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		<p>
+			Barycentric coordinates rely on a center of mass for determining the position of a point in a triangle.
+			This way of interpolation is useful for determining the color of a pixel across a gradient as can be shown in
+			the triangle figure below.
+		</p>
+
+		<figure>
+			<img src="images/screenshot_2-23_17-39-6.png" alt="Triangle gradient" style="width:50%"/>
+			<figcaption>Triangle gradient</figcaption>
+		</figure>
+
+		<figure>
+			<img src="images/screenshot_2-23_17-24-0.png" alt="Color Wheel" style="width:50%"/>
+			<figcaption>Color Wheel</figcaption>
+		</figure>
 
 		<h2>Task 5: "Pixel sampling" for texture mapping</h2>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		<p>
+			Pixel Sampling refers to using a subset of pixels from an image to represent it at a lower resolution.
+			In context of texture sampling, this refers to how groups of pixels are combined to produce the result of a 
+			texture. In nearest neighbor sampling, I simply choose the closest pixel to the sample point to determine the 
+			color of the texture. In bilinear sampling, I used the 4 closest pixels to the sample point and apply 
+			linear interpolation using the lerp function to more accurately determine the color of the texture.
+		</p>
+
+		<figure>
+			<img src="images/screenshot_2-24_14-17-29.png" alt="Nearest, Supersample 1" style="width:50%"/>
+			<figcaption>Nearest, Sample Size 1</figcaption>
+		</figure>
+
+		<figure>
+			<img src="images/screenshot_2-24_14-17-31.png" alt="Linear, Sample Size 1" style="width:50%"/>
+			<figcaption>Linear, Sample Size 1</figcaption>
+		</figure>
+
+		<figure>
+			<img src="images/screenshot_2-24_14-17-43.png" alt="Nearest, Sample Size 16" style="width:50%"/>
+			<figcaption>Nearest, Sample Size 16</figcaption>
+		</figure>
+
+		<figure>
+			<img src="images/screenshot_2-24_14-17-51.png" alt="Linear, Sample Size 16" style="width:50%"/>
+			<figcaption>Linear, Sample Size 16</figcaption>
+		</figure>
 
 		<h2>Task 6: "Level Sampling" with mipmaps for texture mapping</h2>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		<p>
+			Level sampling uses mipmaps to sample textures at different levels of detail to reduce both aliasing and 
+			blurring. I implemented the mipmap function to generate mipmaps for a given texture and used
+			the mipmap function to sample the texture at different levels of detail. 
 
-		<h2>(Optional) Task 7: Extra Credit - Draw Something Creative!</h2>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Supersampling is the best at reducing Antialiasing, but it consumes a lot of memory and is slow.
+			Pixel sampling is a lot faster uses less memory, but it can cause blurring in images.
+			Level sampling is a compromise that mipmaps to sample textures for different levels of detail. 
+		</p>
 
-		<h2>Additional Notes (please remove)</h2>
-		<ul>
-			<li>You can also add code if you'd like as so: <code>code code code</code></li>
-			<li>If you'd like to add math equations, 
-				<ul>
-					<li>You can write inline equations like so: \( a^2 + b^2 = c^2 \)</li>
-					<li>You can write display equations like so: \[ a^2 + b^2 = c^2 \]</li>
-				</ul>
-			</li>
-		</ul>
+		<figure>
+			<img src="docs/images/screenshot_2-24_20-13-2.png" alt="Level 0, Pixel nearest" style="width:50%"/>
+			<figcaption>Level 0, Pixel nearest</figcaption>
+		</figure>
+		<figure>
+			<img src="docs/images/screenshot_2-24_20-13-10.png" alt="Level 0, Pixel Linear" style="width:50%"/>
+			<figcaption>Level 0, Pixel Linear</figcaption>
+		</figure>
+		<figure>
+			<img src="docs/images/screenshot_2-24_20-13-26.png" alt="Level Nearest, Pixel nearest" style="width:50%"/>
+			<figcaption>Level Nearest, Pixel nearest</figcaption>
+		</figure>
+		<figure>
+			<img src="docs/images/screenshot_2-24_20-13-30.png" alt="Level Nearest, Pixel Linear" style="width:50%"/>
+			<figcaption>Level Nearest, Pixel Linear</figcaption>
+		</figure>
 		</div>
 	</body>
 </html>
